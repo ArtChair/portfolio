@@ -257,6 +257,10 @@ select {
     width: 100%;
     text-align: center;
   }
+  .menu ul li a {
+    display: inline-block;
+    padding: 0 100px;
+  }
   .header_body_content {
     display: flex;
     flex-direction: column;
