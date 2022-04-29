@@ -1,0 +1,294 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* @font-face {
+	font-family: 'BebasBold';
+	src: url('../fonts/BebasBold/BebasBold.eot');
+	src: url('../fonts/BebasBold/BebasBold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/BebasBold/BebasBold.woff') format('woff'),
+		 url('../fonts/BebasBold/BebasBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+} */
+/* обнуление */
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+.content {
+    max-width: 963px;
+    margin: 0px auto;
+}
+
+/* -----------------------ХЭДЕР-------------------------------------*/
+.header {
+}
+
+.menu {
+  padding: 33px 0;
+  border-bottom: 1px solid #828282;
+
+}
+.menu_list {
+  display: flex;
+  flex-wrap: wrap;
+  
+  white-space: nowrap;
+}
+
+.menu_item a {
+  font-size: 18px;
+  line-height: 62px;
+  text-decoration: none;
+  color: #828282;
+  font-family: 'Gilroy-Bold';
+}
+.menu_item:not(:last-child) {
+  margin: 0 155px 0 0;
+}
+.header_body_content {
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.header_body_name {
+  display: flex;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 40px;
+  line-height: 59px;
+  white-space: wrap;
+  max-width: 300px;
+}
+
+.header_body_job {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  font-family:'Gilroy-Medium', sans-serif;;
+  line-height: 22px;
+}
+
+.header_body_img {
+  margin-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  font-family:'Gilroy-Medium', sans-serif;;
+  line-height: 22px;
+}
+/* ----------------------МЭЙН-------------------------- */
+.content_main {
+  background: #F6F6F6;
+  max-width: 100%;
+}
+.main {
+  max-width: 963px;
+  margin: 0px auto;
+}
+.main_body {
+  min-height: 506px;
+}
+.main_about {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 17px;
+  font-size: 34px;
+  font-family: 'Gilroy-Bold';
+}
+.main_info {
+  text-align: center;
+  max-width: 485px;
+  margin: 0px auto;
+  font-size: 18px;
+  font-family: 'Gilroy-Medium';
+
+}
+.main_skills_wrapper {
+
+}
+.main_skills_h2 {
+  text-align: center;
+  font-size: 34px;
+  font-family: 'Gilroy-Bold';
+  line-height: 42px;
+  margin-top: 91px;
+}
+.main_work_space {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Gilroy-Medium';
+  margin: 60px 0 84px 0;
+}
+.main_skills_body {
+  display: flex;
+  justify-content: space-around;
+  max-width: 943px;
+  margin: 0px auto;
+  color: #828282;
+}
+.main_skills_block_1 img {
+  background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+.text_1,.text_2, .text_3  {
+  padding-top: 30px;
+  max-width: 90px;
+  text-align: center;
+  font-family: 'Gilroy-Bold';
+  font-size: 14px;
+  line-height: 17px;
+}
+.main_skills_block_2 img {
+  background: radial-gradient(76% 75.63% at 32.97% 22.44%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+}
+.main_skills_block_3 img {
+  background: radial-gradient(76% 75.63% at 32.97% 22.42%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+}
+/* -------------------ФУТЕР----------------------------- */
+.footer {
+}
+
+/* ------------------МЕДИА ЗАПРОСЫ---------------------------------- */
+@media screen and (max-width: 549px) {
+  .menu_list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+  }
+  nav.menu {
+    padding: 0px;
+  }
+  .menu li.menu_item {
+    margin-right: 1px;
+    border-bottom: 1px solid silver;
+    width: 100%;
+  }
+  .menu li.menu_item:hover {
+    background-color: rgba(160, 160, 160, 0.21);
+    border-radius: 4px;
+    max-height: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu li:hover {
+    width: 100%;
+    text-align: center;
+  }
+  .header_body_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .header_body_content {
+    padding-top: 25px;
+    align-items: flex-end;
+    /* text-align: start; */
+  }
+  .header_body_content div:not(:first-child ) {
+    padding-top: 25px;
+  }
+  .header_body_name {
+    display: flex;
+    font-size: 34px;
+    /* max-width: 435px; */
+
+    white-space: wrap;
+
+  }
+  .header_body_job {
+    line-height: 25px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 970px) {
+  .menu_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  } 
+  .menu_item {
+    margin: 0 155px 0 0;
+  }
+}
